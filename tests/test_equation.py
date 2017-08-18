@@ -86,7 +86,7 @@ class TestEquation(object):
         'test_id,test_input',
         [('plus_minus', "x^2 +- 3.5xy + y = y^2 - xy + y"),
          ('minus_plus', "x^2 + 3.5xy + y = y^2 -+ xy + y"), ])
-    def test_multi_sign_equation(self, test_id, test_input):
+    def test_plus_minus_sign_equation(self, test_id, test_input):
         with pytest.raises(equation.InvalidEquationError) as error:
             equ = equation.Equation(test_input)
 
