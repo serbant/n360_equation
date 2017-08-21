@@ -90,7 +90,7 @@ ALL_VARS_POLY_TERM = re.compile(
                                # 0 or one time
         (\^)?                  # exponentiation 0 or one time
         (\d+)?                 # exponent 0 or one time
-        '''.format(''.join(VAR_NAMES)), re.VERBOSE)
+        '''
 
 
 def get_args():
